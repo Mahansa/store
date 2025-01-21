@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    color: #2c3e50;
+}
+
+.Awal {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #3498db;
+    color: #fff;
+}
+
+.Awal h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.Awal h2 {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.paket {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 20px;
+    gap: 30px;
+}
+
+.paket1, .paket2, .paket3 {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    transition: transform 0.3s ease-in-out;
+}
+
+.paket1:hover, .paket2:hover, .paket3:hover {
+    transform: translateY(-10px);
+}
+
+.paket h2 {
+    font-size: 28px;
+    color: #3498db;
+    margin-bottom: 15px;
+}
+
+.paket h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #e74c3c;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.new-price {
+    color: #2ecc71;
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: -10px;
+}
+
+.old-price2 {
+    text-decoration: line-through;
+    color: #e74c3c;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.new-price2 {
+    color: #2ecc71;
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: -10px;
+}
+
+.paket ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.paket ul li {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #7f8c8d;
+}
+
+.paket3 h1 {
+    color: #e74c3c;
+}
+
+.paket3 p {
+    font-size: 16px;
+    color: #7f8c8d;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #3498db;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    .Awal h1 {
+        font-size: 36px;
+    }
+
+    .Awal h2 {
+        font-size: 20px;
+    }
+
+    .paket {
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .paket1, .paket2, .paket3 {
+        padding: 20px;
+        flex: none;
+        width: 90%;
+    }
+
+    .paket h2 {
+        font-size: 24px;
+    }
+
+    .paket h1 {
+        font-size: 28px;
+    }
+
+    .paket ul li {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Awal h1 {
+        font-size: 30px;
+    }
+
+    .Awal h2 {
+        font-size: 18px;
+    }
+
+    .paket h2 {
+        font-size: 20px;
+    }
+
+    .paket h1 {
+        font-size: 24px;
+    }
+
+    .paket ul li {
+        font-size: 12px;
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
